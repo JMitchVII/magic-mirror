@@ -3,6 +3,8 @@ const selectSVG = id => {
   return new SVGElement(el);
 };
 
+
+
 const createSVG = type => {
   const el = document.createElementNS('http://www.w3.org/2000/svg', type);
   return new SVGElement(el);
@@ -35,13 +37,23 @@ const svg = selectSVG('svg');
 const text = document.getElementById('text');
 const offscreenText = document.getElementById('offscreen-text');
 const input = document.getElementById('input');
+
+
+
 let width = window.innerWidth;
 let height = window.innerHeight;
 let textSize = 0;
 let textCenter = 0;
 const letters = [];
-const prompt = ['I', ' ', 'L', 'o', 'v', 'e', ' ', 'y', 'o', 'u'];
+let prompt = ['A','l','y','s','s','a'];
 let runPrompt = true;
+
+window.setTimeout(function(){
+  input.value = ""
+  prompt = ['I', ' ', 'L', 'o', 'v', 'e', ' ', 'y', 'o', 'u','!'];
+  runPrompt = true;
+  addPrompt(0);
+},6000);
 
 const resizePage = () => {
   width = window.innerWidth;
