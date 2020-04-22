@@ -45,12 +45,12 @@ let height = window.innerHeight;
 let textSize = 0;
 let textCenter = 0;
 const letters = [];
-let prompt = ['A','l','y','s','s','a'];
+let prompt = ['W','e','l','c','o','m','e',' ','b','a','c','k','!'];
 let runPrompt = true;
 
 window.setTimeout(function(){
   input.value = ""
-  prompt = ['I', ' ', 'L', 'o', 'v', 'e', ' ', 'y', 'o', 'u','!'];
+  prompt = ['b','i','t','c','h','!'];
   runPrompt = true;
   addPrompt(0);
 },6000);
