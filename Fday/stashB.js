@@ -319,7 +319,7 @@ function init(font) {
         }
         stage.render();
     }
-    var welcomeMessage = "H A P P Y  B I R T H D A Y  A S H !!"
+    var welcomeMessage = "H A P P Y  F A T H E R S  D A Y  D A D !!"
     var autoTypeSpeed = 400;
     setTimeout(addWelcomeLetter, autoTypeSpeed);
     function addWelcomeLetter() {
